@@ -8,11 +8,13 @@ const Stack = createStackNavigator();
 const RotaAutenticacao = () => {
 
     return (
-        <Stack.Navigator headerMode="none" >  
+        <Stack.Navigator headerMode="none">  
             <Stack.Screen
             name="Sign Up"
             component={SignUp}/>
-            <Stack.Screen name="Cadastro" component={Cadastro} />
+            <Stack.Screen
+            name="Cadastro"
+            component={Cadastro}/>
         </Stack.Navigator>
     )
 

@@ -1,13 +1,12 @@
-import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import {View, Text, Image, TouchableOpacity} from 'react-native';
+import {View, Text, Image, TouchableOpacity, SafeAreaView} from 'react-native';
 import Titulo from '../../components/Titulo/Titulo';
 import {styles} from './styles';
 
 const SignUp = (props) => {
   
     return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Image
         source={require('../../assets/img/logo/capiminvest.png')}
         style={styles.logo}
@@ -30,7 +29,7 @@ const SignUp = (props) => {
           <Text style={styles.textoVerde}>Login</Text>
         </TouchableOpacity>
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 

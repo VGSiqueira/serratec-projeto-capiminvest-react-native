@@ -1,12 +1,14 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, SafeAreaView } from 'react-native';
+import Cabecalho from '../../components/Cabecalho/Cabecalho';
+import { styles } from './styles';
 
 const Cadastro = () => {
 
     return (
-        <View>
-            
-        </View>
+        <SafeAreaView style={styles.container}>
+            <Cabecalho />
+        </SafeAreaView>
     )
 
 }
