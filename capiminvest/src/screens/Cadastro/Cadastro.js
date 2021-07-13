@@ -1,16 +1,30 @@
 import React from 'react';
-import { View, SafeAreaView } from 'react-native';
+import {View, SafeAreaView, Text} from 'react-native';
 import Cabecalho from '../../components/Cabecalho/Cabecalho';
-import { styles } from './styles';
+import FormCadastro from '../../components/FormCadastro/FormCadastro';
+import Titulo from '../../components/Titulo/Titulo';
+import {styles} from './styles';
+
 
 const Cadastro = () => {
+  return (
+    <SafeAreaView style={styles.container}>
+      <Cabecalho />
+      <View style={styles.header}>
+        <View style={styles.titulo}>
+          <Titulo titulo="Criar conta" />
+        </View>
+        <View style={styles.subtitulo}>
+          <Text>Invista e ganhe o dobro a partir de agora!</Text>
+        </View>
+      </View>
 
-    return (
-        <SafeAreaView style={styles.container}>
-            <Cabecalho />
-        </SafeAreaView>
-    )
+        <View style={styles.formulario}>
+            <FormCadastro />
+        </View>
 
-}
+    </SafeAreaView>
+  );
+};
 
 export default Cadastro;

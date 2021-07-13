@@ -6,6 +6,7 @@ export const GlobalConfig = {
     dimension: {
         width: width,
         height: height,
+        marginH: width / 25
     },
     colors: {
         bgBotaoVerde: "#276955",

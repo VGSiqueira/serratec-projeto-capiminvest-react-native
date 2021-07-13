@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
     container: {
         justifyContent: "center",
         alignItems: "center",
-        marginHorizontal: GlobalConfig.dimension.width / 25,
+        marginHorizontal: GlobalConfig.dimension.marginH,
         paddingTop: GlobalConfig.dimension.height / 7
     },
     logo: {
