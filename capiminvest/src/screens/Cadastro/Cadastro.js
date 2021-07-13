@@ -5,11 +5,10 @@ import FormCadastro from '../../components/FormCadastro/FormCadastro';
 import Titulo from '../../components/Titulo/Titulo';
 import {styles} from './styles';
 
-
-const Cadastro = () => {
+const Cadastro = ({navigation:{ goBack }}) => {
   return (
     <SafeAreaView style={styles.container}>
-      <Cabecalho />
+      <Cabecalho onPress={() => goBack()}  />
       <View style={styles.header}>
         <View style={styles.titulo}>
           <Titulo titulo="Criar conta" />
@@ -19,10 +18,9 @@ const Cadastro = () => {
         </View>
       </View>
 
-        <View style={styles.formulario}>
-            <FormCadastro />
-        </View>
-
+      <View style={styles.formulario}>
+          <FormCadastro />
+      </View>
     </SafeAreaView>
   );
 };

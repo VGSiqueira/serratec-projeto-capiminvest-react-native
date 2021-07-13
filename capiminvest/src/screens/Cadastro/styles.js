@@ -18,6 +18,6 @@ export const styles = StyleSheet.create({
         fontSize: 17,
     },
     formulario: {
-        
+        marginTop: GlobalConfig.dimension.height / 20
     }
 })

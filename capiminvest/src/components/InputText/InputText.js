@@ -12,7 +12,8 @@ const InputText = (props) => {
             placeholder={props.placeholder}
             style={styles.textInput}
             textContentType={props.textContentType}
-            secureTextEntry={props.secureTextEntry}/>
+            secureTextEntry={props.secureTextEntry}
+            placeholderTextColor="#89ada2"/>
         </View>
     )
 

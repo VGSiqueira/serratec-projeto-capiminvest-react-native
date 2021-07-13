@@ -1,16 +1,16 @@
 import React from 'react';
-import { View } from 'react-native';
+import {TouchableWithoutFeedback, View} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import { styles } from './styles';
+import {styles} from './styles';
 
-const Cabecalho = () => {
+const Cabecalho = (props) => {
+  return (
+    <View style={styles.container}>
+      <TouchableWithoutFeedback onPress={props.onPress} >
+        <Icon name="arrow-back" size={30} />
+      </TouchableWithoutFeedback>
+    </View>
+  );
+};
 
-    return (
-        <View style={styles.container}>
-            <Icon name="arrow-back" size={30}/>
-        </View>
-    )
-
-}
-
-export default Cabecalho
+export default Cabecalho;

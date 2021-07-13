@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
-import {View} from 'react-native';
+import {View, TouchableOpacity, Text} from 'react-native';
 import InputText from '../InputText/InputText';
 import InputTextMasked from '../InputTextMasked/InputTextMasked';
-import {TextInputMask} from 'react-native-masked-text';
 import {styles} from './styles';
 
 const FormCadastro = () => {
@@ -66,9 +65,20 @@ const FormCadastro = () => {
         value={senha}
         onChangeText={setSenha}
         placeholder="Senha"
-        textContentType='password'
+        textContentType="password"
         secureTextEntry={true}
       />
+      <View style={styles.footer}>
+        <TouchableOpacity style={styles.botao}>
+          <Text style={styles.texto}>Cadastrar</Text>
+        </TouchableOpacity>
+        <View style={styles.boxTextos}>
+          <Text>Já possui uma conta? </Text>
+          <TouchableOpacity>
+            <Text style={styles.login}>Faça o login!</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
     </View>
   );
 };

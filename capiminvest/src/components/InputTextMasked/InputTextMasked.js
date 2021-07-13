@@ -11,6 +11,8 @@ const InputTextMasked = (props) => {
       keyboardType={props.keyboardType}
       returnKeyType="none"
       options={props.options}
+      placeholderTextColor="#89ada2"
+      style={{borderBottomWidth: 1, borderColor: "#276955"}}
     />
   );
 };
