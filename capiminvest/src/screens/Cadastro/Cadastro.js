@@ -1,11 +1,11 @@
 import React from 'react';
-import {View, SafeAreaView, Text} from 'react-native';
+import {View, SafeAreaView, Text,TouchableOpacity} from 'react-native';
 import Cabecalho from '../../components/Cabecalho/Cabecalho';
 import FormCadastro from '../../components/FormCadastro/FormCadastro';
 import Titulo from '../../components/Titulo/Titulo';
 import {styles} from './styles';
 
-const Cadastro = ({navigation:{ goBack }}) => {
+const Cadastro = ( {navigation:{ goBack}, navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <Cabecalho onPress={() => goBack()}  />
@@ -20,6 +20,17 @@ const Cadastro = ({navigation:{ goBack }}) => {
 
       <View style={styles.formulario}>
           <FormCadastro />
+      </View>
+      <View style={styles.footer}>
+        <TouchableOpacity  style={styles.botao}>
+          <Text style={styles.texto}>Cadastrar</Text>
+        </TouchableOpacity>
+        <View style={styles.boxTextos}>
+          <Text>Já possui uma conta? </Text>
+          <TouchableOpacity onPress={() => navigation.navigate('Login')} >
+            <Text style={styles.login}>Faça o login!</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </SafeAreaView>
   );
