@@ -74,7 +74,7 @@ const FormCadastro = () => {
         </TouchableOpacity>
         <View style={styles.boxTextos}>
           <Text>Já possui uma conta? </Text>
-          <TouchableOpacity>
+          <TouchableOpacity >
             <Text style={styles.login}>Faça o login!</Text>
           </TouchableOpacity>
         </View>

@@ -25,7 +25,7 @@ const SignUp = (props) => {
           <Text style={styles.textoBranco}>Criar conta</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.botaoTransparente}>
+        <TouchableOpacity style={styles.botaoTransparente} onPress={() => props.navigation.navigate('Login')}>
           <Text style={styles.textoVerde}>Login</Text>
         </TouchableOpacity>
       </View>
