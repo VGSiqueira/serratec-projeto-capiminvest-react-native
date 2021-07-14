@@ -3,6 +3,7 @@ import {SafeAreaView, ScrollView, View, Text, Image} from 'react-native';
 import {styles} from './styles';
 import Titulo from '../../components/Titulo/Titulo';
 import Subtitulo from '../../components/Subtitulo/Subtitulo';
+import ListaCotacoes from '../../components/ListaCotacoes/ListaCotacoes';
 
 const Home = () => {
   return (
@@ -26,12 +27,13 @@ const Home = () => {
         </View>
 
         <View style={styles.cotacoes}>
-            <View style={styles.subtitulo}>
+          <View style={styles.subtitulo}>
             <Subtitulo subtitulo="Cotações" />
-            </View>
-            
+          </View>
+          <View style={styles.cardCotacoes}>
+            <ListaCotacoes />
+          </View>
         </View>
-
       </ScrollView>
     </SafeAreaView>
   );

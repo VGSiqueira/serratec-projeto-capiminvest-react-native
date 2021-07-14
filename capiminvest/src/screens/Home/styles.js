@@ -47,6 +47,10 @@ export const styles = StyleSheet.create({
         marginTop: GlobalConfig.dimension.marginCabecalho / 1.5
     },
     subtitulo: {
+
+    },
+    cardCotacoes: {
         
     }
+    
 })
