@@ -1,9 +1,15 @@
-import React, {useState}from 'react';
-import { SafeAreaView, View } from 'react-native';
+import React, { useState } from 'react';
+import { 
+    SafeAreaView,
+    TouchableWithoutFeedback,
+    View,
+    Text,
+    TouchableOpacity
+     } from 'react-native';
 import Cabecalho from '../../components/Cabecalho/Cabecalho';
 import InputText from '../../components/InputText/InputText';
 import Titulo from '../../components/Titulo/Titulo';
-import { styles } from './styles'
+import { style } from './styles'
 
 
 const Login = ({ navigation: { goBack } }) => {
@@ -11,31 +17,37 @@ const Login = ({ navigation: { goBack } }) => {
     const [senha, setSenha] = useState('');
 
     return (
-        <SafeAreaView style={styles.container} >
+        <SafeAreaView style={style.container} >
             <Cabecalho onPress={() => goBack()} />
-            
-                <View style={styles.titulo}>
-                    <Titulo titulo="Vamos começar a ganhar dinheiro!" />
-                </View>
-                <View style={styles.formulario}>
-                    <InputText
+
+            <View style={style.titulo}>
+                <Titulo titulo="Vamos começar a ganhar dinheiro!" />
+            </View>
+            <View style={style.formulario}>
+                <InputText
                     value={email}
                     onChangeText={setEmail}
                     placeholder="E-mail"
                     textContentType="emailAddress"
-                    />
-                    <InputText
+                />
+                <InputText
                     value={senha}
                     onChangeText={setSenha}
                     placeholder="Senha"
                     textContentType="password"
                     secureTextEntry={true}
-                    />                   
-                </View>
-            
-
-
-
+                />
+            </View>
+            <View>
+                <TouchableWithoutFeedback>
+                    <Text style={style.text}>Esqueceu a sua senha ?</Text>
+                </TouchableWithoutFeedback>
+            </View>
+            <View style={style.boxBotoes}>
+                <TouchableOpacity activeOpacity={0.7} style={style.botaoVerde} >
+                    <Text style={style.textoBranco}>Entrar</Text>
+                </TouchableOpacity>
+            </View>
 
         </SafeAreaView>
     )
