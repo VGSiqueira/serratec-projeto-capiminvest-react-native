@@ -3,6 +3,6 @@ import { GlobalConfig } from "../../global/GlobalConfig";
 
 export const styles = StyleSheet.create({
     container: {
-        marginTop: GlobalConfig.dimension.height / 20
+        marginTop: GlobalConfig.dimension.marginCabecalho
     }
 })
