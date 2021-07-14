@@ -1,49 +1,42 @@
 import { StyleSheet } from "react-native";
 import { GlobalConfig } from "../../global/GlobalConfig";
 
-export const styles = StyleSheet.create({
+export const style = StyleSheet.create({
     container: {
         flex: 1,
         marginHorizontal: GlobalConfig.dimension.marginH,
         
-    },
-    header: {
-        alignItems: "center",
-    },
+    },    
     titulo: {
         marginTop: GlobalConfig.dimension.height / 40,
         marginBottom: GlobalConfig.dimension.height / 70
     },
-    subtitulo: {
-        fontSize: 17,
-    },
     formulario: {
         marginTop: GlobalConfig.dimension.height / 20
     },
-    footer: {
-        marginTop: GlobalConfig.dimension.height / 15
+    text:{
+        textAlign: 'center',      
+        fontSize:16,
+        fontWeight: '700',
+        marginTop: GlobalConfig.dimension.marginH
     },
-    boxTextos: {
-        flexDirection: "row",
-        justifyContent: "center",
-        marginTop: GlobalConfig.dimension.height / 15
-    },
-    login: {
-        textDecorationLine: "underline",
-        color: GlobalConfig.colors.bgBotaoVerde,
-        fontWeight: "bold"
-    },
-    botao: {
+    botaoVerde: {
         backgroundColor: GlobalConfig.colors.bgBotaoVerde,
         borderRadius: 20,
         height: GlobalConfig.dimension.height / 17,
-        alignItems: "center",
-        justifyContent: "center"
+        width: "100%",
+        justifyContent: "center",
+        alignItems: "center"
     },
-    texto: {
-        color:"#fff",
+    textoBranco: {
+        color: "#fff",
         fontSize: 18,
         fontWeight: "bold"
     },
-    
+    boxBotoes: {
+        alignItems: "center",
+      
+        marginTop: GlobalConfig.dimension.marginH
+    },
+
 })

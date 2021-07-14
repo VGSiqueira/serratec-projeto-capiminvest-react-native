@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
         marginBottom: GlobalConfig.dimension.height / 60
     },
     botoes: {
-
+        
     },
     infoUsuario: {
         fontSize: 15

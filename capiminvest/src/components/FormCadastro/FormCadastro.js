@@ -68,17 +68,7 @@ const FormCadastro = () => {
         textContentType="password"
         secureTextEntry={true}
       />
-      <View style={styles.footer}>
-        <TouchableOpacity style={styles.botao}>
-          <Text style={styles.texto}>Cadastrar</Text>
-        </TouchableOpacity>
-        <View style={styles.boxTextos}>
-          <Text>Já possui uma conta? </Text>
-          <TouchableOpacity>
-            <Text style={styles.login}>Faça o login!</Text>
-          </TouchableOpacity>
-        </View>
-      </View>
+      
     </View>
   );
 };
