@@ -14,11 +14,11 @@ export const styles = StyleSheet.create({
         width: 24,
         height: 24,
         position: "absolute",
-        left: 20
+        left: GlobalConfig.dimension.width / 20
     },
     titulo: {
-        fontSize: 22,
+        fontSize: 20,
         position: "absolute",
-        left: 100,
+        left: GlobalConfig.dimension.width / 5
     }
 })

@@ -1,12 +1,11 @@
 import React from 'react';
 
-const Carteira = () => {
 
-    return (
-        <>
-        </>
-    )
+const Home = () => {
+  return (
+    <>
+    </>
+  );
+};
 
-}
-
-export default Carteira
+export default Home;
