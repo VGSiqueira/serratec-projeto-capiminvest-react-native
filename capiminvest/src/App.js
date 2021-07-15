@@ -11,7 +11,7 @@ const App = () => {
   return (
     // style={{paddingBottom: GlobalConfig.dimension.height / 11.5}}
     <SafeAreaProvider >
-      <StatusBar barStyle='dark-content' backgroundColor='transparent' translucent />
+      <StatusBar barStyle='dark-content' backgroundColor='transparent' translucent  />
       <NavigationContainer>
         {/* <RotaAutenticacao /> */}
         <TabNavigation />
