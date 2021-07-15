@@ -4,11 +4,12 @@ import {styles} from './styles';
 import Titulo from '../../components/Titulo/Titulo';
 import Subtitulo from '../../components/Subtitulo/Subtitulo';
 import ListaCotacoes from '../../components/ListaCotacoes/ListaCotacoes';
+import ListaNoticias from '../../components/ListaNoticias/ListaNoticias';
 
 const Home = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scrollView}>
+      <View style={styles.scrollView}>
         <View style={styles.header}>
           <Titulo titulo="Olá, Vinicius!" />
         </View>
@@ -34,7 +35,17 @@ const Home = () => {
             <ListaCotacoes />
           </View>
         </View>
-      </ScrollView>
+
+        <View style={styles.noticias} >
+          <View style={styles.subtitulo}>
+            <Subtitulo subtitulo="Notícias Recentes" />
+          </View>
+          <View style={styles.boxNoticias}>
+            <ListaNoticias />
+          </View>
+        </View>
+
+      </View>
     </SafeAreaView>
   );
 };

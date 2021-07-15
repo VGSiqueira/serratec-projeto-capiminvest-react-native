@@ -8,7 +8,8 @@ export const styles = StyleSheet.create({
         borderWidth: 1,
         borderRadius: 10,
         height: GlobalConfig.dimension.height / 20,
-        marginBottom: GlobalConfig.dimension.height / 40
+        marginBottom: GlobalConfig.dimension.height / 40,
+        borderColor: GlobalConfig.colors.bgBotaoVerde,
     },
     icones: {
         width: 24,
@@ -19,6 +20,6 @@ export const styles = StyleSheet.create({
     titulo: {
         fontSize: 20,
         position: "absolute",
-        left: GlobalConfig.dimension.width / 5
+        left: GlobalConfig.dimension.width / 5,
     }
 })

@@ -47,9 +47,13 @@ export const styles = StyleSheet.create({
         marginTop: GlobalConfig.dimension.marginCabecalho / 1.5
     },
     subtitulo: {
-
+        marginBottom: GlobalConfig.dimension.marginCabecalho / 3,
+        marginTop: GlobalConfig.dimension.marginCabecalho / 3
     },
     cardCotacoes: {
+        
+    },
+    boxNoticias: {
         
     }
     

@@ -5,14 +5,16 @@ import RotaAutenticacao from './navigation/RotaAutenticacao';
 import TabNavigation from './navigation/TabNavigation';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import { StatusBar } from 'react-native';
+import { GlobalConfig } from './global/GlobalConfig';
 
 const App = () => {
   return (
-    <SafeAreaProvider>
+    // style={{paddingBottom: GlobalConfig.dimension.height / 11.5}}
+    <SafeAreaProvider >
       <StatusBar barStyle='dark-content' backgroundColor='transparent' translucent />
       <NavigationContainer>
-        <RotaAutenticacao />
-        {/* <TabNavigation /> */}
+        {/* <RotaAutenticacao /> */}
+        <TabNavigation />
       </NavigationContainer>
     </SafeAreaProvider>
   );

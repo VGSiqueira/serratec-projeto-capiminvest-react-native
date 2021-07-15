@@ -29,7 +29,7 @@ const TabNavigation = () => {
                     component={Home}
                     options={{
                         tabBarIcon: ({focused}) => (
-                            <View style={styles.iboxIcon}>
+                            <View style={styles.boxIcon}>
                                 <HomeIcon name="home" size={40} style={{color: focused ? "#276955" : "#89ada2"}} />
                                 <Text style={[ styles.text,{color: focused ? "#276955" : "#89ada2" }]} >Início</Text>
                             </View>
@@ -40,7 +40,7 @@ const TabNavigation = () => {
                     component={Procurar}
                     options={{
                         tabBarIcon: ({focused}) => (
-                            <View style={styles.iboxIcon}>
+                            <View style={styles.boxIcon}>
                                 <SearchIcon name="search-dollar" size={40} style={{color: focused ? "#276955" : "#89ada2"}} />
                                 <Text style={[ styles.text,{color: focused ? "#276955" : "#89ada2" }]} >Procurar</Text>
                             </View>
@@ -51,7 +51,7 @@ const TabNavigation = () => {
                     component={Carteira}
                     options={{
                         tabBarIcon: ({focused}) => (
-                            <View style={styles.iboxIcon}>
+                            <View style={styles.boxIcon}>
                                 <WalletIcon name="wallet" size={40} style={{color: focused ? "#276955" : "#89ada2"}} />
                                 <Text style={[ styles.text,{color: focused ? "#276955" : "#89ada2" }]} >Carteira</Text>
                             </View>
@@ -62,7 +62,7 @@ const TabNavigation = () => {
                     component={Conta}
                     options={{
                         tabBarIcon: ({focused}) => (
-                            <View style={styles.iboxIcon}>
+                            <View style={styles.boxIcon}>
                                 <ProfileIcon name="account-circle" size={40} style={{color: focused ? "#276955" : "#89ada2"}} />
                                 <Text style={[ styles.text,{color: focused ? "#276955" : "#89ada2" }]} >Conta</Text>
                             </View>

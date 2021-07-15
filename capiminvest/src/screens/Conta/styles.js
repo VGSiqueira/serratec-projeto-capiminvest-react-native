@@ -16,7 +16,8 @@ export const styles = StyleSheet.create({
     imagem: {
         width: GlobalConfig.dimension.width / 5,
         height: GlobalConfig.dimension.height / 10,
-        marginBottom: GlobalConfig.dimension.height / 60
+        marginBottom: GlobalConfig.dimension.height / 60,
+        tintColor: GlobalConfig.colors.bgBotaoVerde
     },
     botoes: {
         
