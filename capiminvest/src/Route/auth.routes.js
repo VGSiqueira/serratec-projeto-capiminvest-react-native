@@ -5,7 +5,7 @@ import TabNavigation from '../navigation/TabNavigation';
 
 const AuthRoutes = () => {
     
-    const { usuario, login } = useContext(UsuarioLogado);
+    const { usuario } = useContext(UsuarioLogado);
 
     return (
         usuario ? <TabNavigation /> : <RotaAutenticacao />

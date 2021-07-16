@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SignUp from './screens/SignUp/SignUp';
 import {NavigationContainer} from '@react-navigation/native';
 import RotaAutenticacao from './navigation/RotaAutenticacao';
@@ -10,6 +10,7 @@ import { UsuarioLogadoProvider } from './contexts/contextUsuario';
 import AuthRoutes from './Route/auth.routes';
 
 const App = () => {
+
   return (
     // style={{paddingBottom: GlobalConfig.dimension.height / 11.5}}
     <SafeAreaProvider >

@@ -2,7 +2,7 @@ import React, { createContext, useState, } from 'react';
 
 const estadoGlobalInicial = {
     usuario: null,
-    login: () => {},
+    username: () => {},
     logout: () => {}
 }
 
@@ -17,7 +17,7 @@ export const UsuarioLogadoProvider = ({children}) => {
         <UsuarioLogado.Provider 
         value={{
             usuario,
-            login: (user) => {
+            username: (user) => {
                 setUsuario(user)
             },
             logout: () => {

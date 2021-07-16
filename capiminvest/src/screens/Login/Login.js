@@ -1,17 +1,19 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { SafeAreaView, TouchableWithoutFeedback, View, Text, TouchableOpacity, Alert } from 'react-native';
 import Cabecalho from '../../components/Cabecalho/Cabecalho';
 import InputText from '../../components/InputText/InputText';
 import Titulo from '../../components/Titulo/Titulo';
 import { style } from './styles';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import {UsuarioLogado} from '../../contexts/contextUsuario'
 
 import http from '../../services/Api/http';
 
 const Login = ({ navigation: { goBack }, navigation }) => {
   const [login, setLogin] = useState('');
   const [senha, setSenha] = useState('');
-  
+
+  const { usuario, username } = useContext(UsuarioLogado)
 
   const entrar = () => {
 
@@ -27,7 +29,11 @@ const Login = ({ navigation: { goBack }, navigation }) => {
         AsyncStorage.setItem('idUsuario', response.data.idCliente)
         AsyncStorage.setItem('nome', response.data.nome)
         console.log(response.data)
-        navigation.navigate('Home')
+        const cliente = {
+          cliente: AsyncStorage.getItem('user'),
+        }
+        username(cliente)
+        // navigation.navigate('Home')
 
 
 

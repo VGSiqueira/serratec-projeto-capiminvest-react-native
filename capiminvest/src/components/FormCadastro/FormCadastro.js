@@ -27,11 +27,12 @@ const FormCadastro = () => {
       senha: senha
     }
     http.post('usuario', usuario)
-      .then(response => (response.data))
+      .then(response => {(response.data)})
       .catch(erro => {
         console.log(erro)
     })
 
+    
     setCpf('')
     setDataNascimento('')
     setEmail('')
