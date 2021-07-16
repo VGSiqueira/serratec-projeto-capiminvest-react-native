@@ -5,6 +5,7 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         marginHorizontal: GlobalConfig.dimension.marginH,
+        paddingBottom: GlobalConfig.dimension.height / 11
     },
     searchBar: {
         marginTop: GlobalConfig.dimension.marginCabecalho,
@@ -40,10 +41,22 @@ export const styles = StyleSheet.create({
         height: 25,
         tintColor: GlobalConfig.colors.bgBotaoVerde
     },
-    sugestoes: {
-        marginTop: GlobalConfig.dimension.marginCabecalho / 2
+    subtitulo: {
+        marginBottom: GlobalConfig.dimension.marginCabecalho / 3,
+        marginTop: GlobalConfig.dimension.marginCabecalho / 3
     },
     boxSugestoes: {
         
+    },
+    boxIndicadores: {
+        flex: 1,
+        width: GlobalConfig.dimension.width - GlobalConfig.dimension.marginH,
+    },
+    sugestao: {
+        borderWidth: 1,
+        borderRadius: 8,
+        height: GlobalConfig.dimension.marginCabecalho,
+        alignItems: "center",
+        justifyContent: "center"
     }
 })
