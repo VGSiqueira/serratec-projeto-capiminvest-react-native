@@ -26,7 +26,6 @@ const Procurar = () => {
       .get(`analisefundamentalista/${search}`)
       .then(response => {
         setDados(response.data);
-        console.log(dados);
       })
       .catch(e => console.log(e));
   };
@@ -83,7 +82,6 @@ const Procurar = () => {
               <CardDados
                 title={item.title}
                 value={item.value}
-                value={item.details}
               />
             </View>
           )}

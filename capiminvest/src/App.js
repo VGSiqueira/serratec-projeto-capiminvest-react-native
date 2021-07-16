@@ -6,6 +6,8 @@ import TabNavigation from './navigation/TabNavigation';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import { StatusBar } from 'react-native';
 import { GlobalConfig } from './global/GlobalConfig';
+import { UsuarioLogadoProvider } from './contexts/contextUsuario';
+import AuthRoutes from './Route/auth.routes';
 
 const App = () => {
   return (
@@ -13,7 +15,10 @@ const App = () => {
     <SafeAreaProvider >
       <StatusBar barStyle='dark-content' backgroundColor='transparent' translucent  />
       <NavigationContainer>
-        <RotaAutenticacao />
+        <UsuarioLogadoProvider>
+          <AuthRoutes />
+        </UsuarioLogadoProvider>
+        {/* <RotaAutenticacao /> */}
         {/* <TabNavigation /> */}
       </NavigationContainer>
     </SafeAreaProvider>

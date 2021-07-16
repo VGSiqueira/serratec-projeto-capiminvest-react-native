@@ -21,7 +21,7 @@ const FormCadastro = () => {
       nome: nome,
       cpf: cpf,
       dataNascimento: dataNascimento,
-      telefo: telefone,
+      telefone: telefone,
       email: email,
       login: login,
       senha: senha

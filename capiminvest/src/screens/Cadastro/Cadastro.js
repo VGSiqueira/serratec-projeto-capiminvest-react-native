@@ -5,6 +5,7 @@ import FormCadastro from '../../components/FormCadastro/FormCadastro';
 import Titulo from '../../components/Titulo/Titulo';
 import {styles} from './styles';
 
+
 const Cadastro = ( {navigation:{ goBack}, navigation}) => {
 
   return (
