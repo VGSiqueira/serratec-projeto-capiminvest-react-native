@@ -33,12 +33,7 @@ const Login = ({ navigation: { goBack }, navigation }) => {
           cliente: AsyncStorage.getItem('user'),
         }
         username(cliente)
-        // navigation.navigate('Home')
-
-
-
       }).catch((erro) => {
-        // Alert.alert("Usuário inválido!")
         console.log(erro)
       })
 

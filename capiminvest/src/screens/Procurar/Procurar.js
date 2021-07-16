@@ -1,8 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {
   Image,
   SafeAreaView,
-  Text,
   TextInput,
   TouchableOpacity,
   View,
@@ -29,15 +28,6 @@ const Procurar = () => {
       })
       .catch(e => console.log(e));
   };
-
-  // const handleSugestao = (ticker) => {
-  //   useEffect(() => {
-  //     acoes.get(`analisefundamentalista/${ticker}`).then(response => {
-  //       setTicker(response.data);
-  //       console.log(ticker);
-  //     });
-  //   }, []);
-  // };
 
   return (
     <SafeAreaView style={styles.container}>

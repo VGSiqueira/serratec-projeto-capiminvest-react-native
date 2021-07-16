@@ -12,15 +12,12 @@ import AuthRoutes from './Route/auth.routes';
 const App = () => {
 
   return (
-    // style={{paddingBottom: GlobalConfig.dimension.height / 11.5}}
     <SafeAreaProvider >
       <StatusBar barStyle='dark-content' backgroundColor='transparent' translucent  />
       <NavigationContainer>
         <UsuarioLogadoProvider>
           <AuthRoutes />
         </UsuarioLogadoProvider>
-        {/* <RotaAutenticacao /> */}
-        {/* <TabNavigation /> */}
       </NavigationContainer>
     </SafeAreaProvider>
   );

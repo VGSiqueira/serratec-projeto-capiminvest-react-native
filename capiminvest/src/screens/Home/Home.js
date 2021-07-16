@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, ScrollView, View, Text, Image} from 'react-native';
+import {SafeAreaView, View, Text, Image} from 'react-native';
 import {styles} from './styles';
 import Titulo from '../../components/Titulo/Titulo';
 import Subtitulo from '../../components/Subtitulo/Subtitulo';
