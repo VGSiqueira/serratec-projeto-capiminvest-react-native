@@ -13,8 +13,8 @@ const App = () => {
     <SafeAreaProvider >
       <StatusBar barStyle='dark-content' backgroundColor='transparent' translucent  />
       <NavigationContainer>
-        {/* <RotaAutenticacao /> */}
-        <TabNavigation />
+        <RotaAutenticacao />
+        {/* <TabNavigation /> */}
       </NavigationContainer>
     </SafeAreaProvider>
   );
