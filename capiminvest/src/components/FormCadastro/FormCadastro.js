@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
-import {View, TouchableOpacity, Text} from 'react-native';
+import React, { useState } from 'react';
+import { View, TouchableOpacity, Text } from 'react-native';
 import InputText from '../InputText/InputText';
 import InputTextMasked from '../InputTextMasked/InputTextMasked';
-import {styles} from './styles';
+import { styles } from './styles';
+import http from '../../services/Api/http';
+import axios from 'axios';
 
 const FormCadastro = () => {
   const [nome, setNome] = useState('');
@@ -12,6 +14,32 @@ const FormCadastro = () => {
   const [email, setEmail] = useState('');
   const [login, setLogin] = useState('');
   const [senha, setSenha] = useState('');
+
+
+  const cadastrar = () => {
+    const usuario = {
+      nome: nome,
+      cpf: cpf,
+      dataNascimento: dataNascimento,
+      telefo: telefone,
+      email: email,
+      login: login,
+      senha: senha
+    }
+    http.post('usuario', usuario)
+      .then(response => (response.data))
+      .catch(erro => {
+        console.log(erro)
+    })
+
+    setCpf('')
+    setDataNascimento('')
+    setEmail('')
+    setLogin('')
+    setNome('')
+    setSenha('')
+    setTelefone('')
+  }
 
   return (
     <View style={styles.container}>
@@ -35,7 +63,7 @@ const FormCadastro = () => {
         type={'datetime'}
         onChangeText={setDataNascimento}
         keyboardType="number-pad"
-        options={{format: 'YYYY-MM-DD'}}
+        options={{ format: 'YYYY-MM-DD' }}
       />
       <InputTextMasked
         value={telefone}
@@ -68,7 +96,11 @@ const FormCadastro = () => {
         textContentType="password"
         secureTextEntry={true}
       />
-      
+      <View style={styles.footer}>
+        <TouchableOpacity onPress={cadastrar} style={styles.botao}>
+          <Text style={styles.texto}>Cadastrar</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };

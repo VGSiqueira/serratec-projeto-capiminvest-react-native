@@ -6,6 +6,7 @@ import Titulo from '../../components/Titulo/Titulo';
 import {styles} from './styles';
 
 const Cadastro = ( {navigation:{ goBack}, navigation}) => {
+
   return (
     <SafeAreaView style={styles.container}>
       <Cabecalho onPress={() => goBack()}  />
@@ -22,9 +23,7 @@ const Cadastro = ( {navigation:{ goBack}, navigation}) => {
           <FormCadastro />
       </View>
       <View style={styles.footer}>
-        <TouchableOpacity  style={styles.botao}>
-          <Text style={styles.texto}>Cadastrar</Text>
-        </TouchableOpacity>
+       
         <View style={styles.boxTextos}>
           <Text>Já possui uma conta? </Text>
           <TouchableOpacity onPress={() => navigation.navigate('Login')} >
